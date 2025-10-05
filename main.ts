@@ -92,7 +92,13 @@ export default class DafYomi extends Plugin {
 		// For the Prakim (chapters) look at Sefaria, If the a side is in the new chapter, then that daf is in the new chapter. Otherwise,
 		// that daf is in the old chapter and the next daf is in the new chapter.
 
-		this.tractates = {
+	    this.tractates = {
+			"2026-01-13": {startDate: this.makeDate("2026-01-13"), disp: "Menachot", linkName: "menachot", prakim: [13,17,38,52,63,72,76,83,87,94,100,104], stpdf:"", stc:"", myjl: "menachot-", sf:"Menachot.", dydg: "Menachot%20", hd: "Menachot-", lgg: "menachot-"},
+			"2025-09-16": {startDate: this.makeDate("2025-9-16"), disp: "Zevachim", linkName: "zevachim", prakim: [15,31,36,47,58,66,70,83,89,92,98,106,112,], stpdf:"", stc:"", myjl: "zevachim-", sf:"Zevachim.", dydg: "Zevachim%20", hd: "Zevachim-", lgg: "zevachim-"},
+			"2025-09-03": {startDate: this.makeDate("2025-09-03"), disp: "Horayot", linkName: "horayot", prakim: [14,19,30,36,38,44,49], stpdf:"", stc:"", myjl: "horayot-", sf:"Horayot.", dydg: "Horayot%20", hd: "Horayot-", lgg: "horayot-"},		
+			"2025-06-20": {startDate: this.makeDate("2025-06-20"), disp: "Avodah Zarah", linkName: "avodah-zarah-", prakim: [14,19,30,36,38,44,49], stpdf:"", stc:"", myjl: "avodah-zarah-", sf:"Avodah_Zarah.", dydg: "AvodahZarah%20", hd: "avodah-zarah-", lgg: "avodah-zarah-"},
+			"2025-05-03": {startDate: this.makeDate("2025-05-03"), disp: "Shevuot", linkName: "shevuot", prakim: [14,19,30,36,38,44,49], stpdf:"", stc:"", myjl: "shevuat-", sf:"Shevuot.", dydg: "Shevuot%20", hd: "Shevuot-", lgg: "shevuot-"},		
+			"2025-04-10": {startDate: this.makeDate("2025-04-10"), disp: "Makkot", linkName: "makkot", prakim: [7,13], stpdf:"", stc:"", myjl: "makkot-", sf:"Makkot.", dydg: "Makkot%20", hd: "Makkot-", lgg: "makkot-"},
 			"2024-12-19": {startDate: this.makeDate("2024-12-19"), disp: "Sanhedrin", linkName: "Sanhedrin", prakim: [18,23,32,40,42,49,68,75,84,90,], stpdf:"", stc:"", myjl: "sanhedrin-", sf:"Sanhedrin.", dydg: "Sanhedrin%20", hd: "sanhedrin-", lgg: "sanhedrin-"},
 			"2024-06-27": {startDate: this.makeDate("2024-06-27"), disp: "Bava Batra", linkName: "Bava Batra", prakim: [17,28,61,73,92,102,108,139,160], stpdf:"", stc:"", myjl: "bava-batra-", sf:"Bava_Batra.", dydg: "BavaBatra%20", hd: "bava-batra-", lgg: "bava-batra-"},
 			"2024-03-01": {startDate: this.makeDate("2024-03-01"), disp: "Bava Metzia", linkName: "Bava Metzia", prakim: [21,33,44,60,75,83,94,103,116], stpdf:"", stc:"", myjl: "bava-metzia-", sf:"Bava_Metzia.", dydg: "BavaMetzia%20", hd: "bava-metzia-", lgg: "bava-metzia-"},
